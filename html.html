@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"> 
+        <title>Session storage</title>
+        <script src="js.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <header>
+        <H1>Testes 1, 2, 3 e 4</H1>
+        <h3>Autor: Marcos Júnior</h3>
+        <br>
+    </header>
+    <body>
+        <h4>Atividade 1</h4>
+        <br>
+        <table class="table table-dark" id="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Salário</th>
+                <th scope="col">Função</th>
+              </tr>
+            </thead>
+                <tbody id="tablebody">
+                  <tr id="0">
+                    <th scope="row">001</th>
+                    <td>Alesandra Gomes</td>
+                    <td>R$1200,00</td>
+                    <td>Recepcionista</td>
+                  </tr>
+                  <tr id="1">
+                    <th scope="row">002</th>
+                    <td>Jacob Frascisco</td>
+                    <td>Faxineiro</td>
+                    <td>R$1200,00</td>
+                  </tr>
+                  <tr id="2">
+                    <th scope="row">003</th>
+                    <td>Larry Stvens</td>
+                    <td>R$18000,00</td>
+                    <td>Gestor de desenvolvimento</td>
+                  </tr>
+                  <tr id="3">
+                    <th scope="row">004</th>
+                    <td>Karen Santos</td>
+                    <td>R$2200,00</td>
+                    <td>Tradutora</td>
+                  </tr>
+                  <tr id="4">
+                    <th scope="row">005</th>
+                    <td>Leandro Cunha</td>
+                    <td>R$4200,00</td>
+                    <td>Analista de sistemas</td>
+                  </tr>
+                  <tr id="5">
+                    <th scope="row">006</th>
+                    <td>Mario Alves</td>
+                    <td>R$8600,00</td>
+                    <td>Analista de Infraestrutura</td>
+                  </tr>
+                  <tr id="6">
+                    <th scope="row">007</th>
+                    <td>Joca Lima</td>
+                    <td>R$7400,00</td>
+                    <td>Jurista</td>
+                  </tr>
+                  <tr id="l8">
+                    <th scope="row">008</th>
+                    <td>Fernanda Poliana</td>
+                    <td>R$9000,00</td>
+                    <td>Clinica Geral Local</td>
+                  </tr>
+                  <tr id="7">
+                    <th scope="row">009</th>
+                    <td>Geovana Carolina</td>
+                    <td>R$800,00</td>
+                    <td>Estagiária em TI</td>
+                  </tr>
+                  <tr id="8">
+                    <th scope="row">010</th>
+                    <td>Gilmara Alves</td>
+                    <td>R$800,00</td>
+                    <td>Estagiária em desenvolvimento de sistemas</td>
+                  </tr>
+                  <tr id="9">
+                      <th scope="row">010</th>
+                      <td>Gilmara Alves</td>
+                      <td>R$800,00</td>
+                      <td>Estagiária em desenvolvimento de sistemas</td>
+                    </tr>
+                </tbody>
+              </table>
+        <br>
+        <h4>Atividade 2</h4>
+
+        <form name="form1">
+            <div class="form-group">
+            
+                <label for="exampleInputEmail1">Email</label>
+                <input name="text1" type="email" class="form-control" id="exampleInputEmail1"  placeholder="Digite seu email">
+                <small id="emailHelp" class="form-text text-muted">Não compartilharemos seu email com ninguém.</small>
+                </div>
+                   
+                <div class="form-group">
+                <label for="exampleInputEmail1">Número de celular</label>
+                <input name="text2" type="text" class="form-control" id="exampleInputEmail1" placeholder="Digite seu celular">
+                    
+                </div>
+                     
+                <div class="form-group">
+                <label for="exampleInputEmail1">Mensagem</label>
+                <textarea name="text3" type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                            
+                <input type="button" value="Enviar mensagem" onClick="AssignValues()" class="btn btn-primary">
+                </form>
+            <br>
+        <h4>Atividade 3</h4>
+        <br>
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Salário</th>
+              <th scope="col">Função</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <tr id="0">
+              <th scope="row">001</th>
+              <td>Alesandra Gomes</td>
+              <td>R$1200,00</td>
+              <td>Recepcionista</td>
+            </tr>
+          </tbody> 
+        </table>
+        <input type="button" value="Gerar tabela" onclick="ExibirTabela()" class="btn btn-primary">
+        <br>
+        <br>
+
+        <h4>Atividade 4</h4>
+        <input type="button" value="Gerar números impares de 100 à 200" onclick="NumerosImpares()" class="btn btn-primary">
+        <div style="padding-bottom: 2rem">
+            <p id="teste"></p>
+        </div>
+    </body>
+
+   
+        
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
